@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke Home Page</title>
+    <meta name="author" content="Kelly Adzima">
+    <meta name="description" content="Home Page the mountain spoke">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/Logo.PNG" alt="The site logo" width="" height="">
+        <h1>The Mountain Spoke</h1>
+        <p>The best experience you will ever have</p>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure.html">Tours</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Enjoy the freedom of riding without the hassle of logistics by taking a guided or self-guided mountain bike tour</h1>
+        <img src="images/headphoto.jpg" alt="mountains and bikes">
+        <p></p>
+    </main>
+
+    <footer>
+        <aside>
+            3950 Valley Commons Drive Bozeman, MT
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Bike | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>

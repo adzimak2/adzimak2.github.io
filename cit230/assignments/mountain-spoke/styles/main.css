@@ -1,0 +1,76 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: #BDD358;
+}
+
+main h1{
+    font-size: 14px;
+    text-align: center;
+}
+
+main img{
+    width: 90%;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+button {
+    margin-top: -60px;
+    margin-left: 160px;
+}
+
+header img {
+    width: 100%;
+}
+
+nav ul li {
+    display: none;
+}
+
+.googlefonts {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navigation.responsive {
+    position: relative;
+    margin-left: -40px;
+}
+
+.navigation.responsive li {
+    background-color: #E5625E;
+    display: block;
+    width: auto;
+    margin: 1px;
+}
+
+.navigation.responsive li a {
+    color: #FFFFFF;
+    padding: .2rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.navigation.responsive li a:hover {
+    color: black;
+    background-color: #E5E059;
+}

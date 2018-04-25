@@ -1,0 +1,45 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        background-color: #E5625E;
+        padding: 10px;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation.responsive {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .navigation.responsive li {
+        background-color: #E5625E;
+        display: block;
+        margin: -3px;
+    }
+
+    .navigation.responsive li a {
+        color: #FFFFFF;
+        padding: 5px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+
+    .navigation.responsive li a:hover {
+        color: black;
+        background-color: #E5E059;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

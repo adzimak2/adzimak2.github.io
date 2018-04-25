@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin - Week 8</title>
+    <meta name="author" content="Kelly Adzima">
+    <meta name="description" content="Form">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logoweather.png" alt="The site logo" width="" height="">
+        <h1>Breazy weather</h1>
+        <div class="subheading">Site Motto</div>
+    </header>
+    <main>
+        <h2>HTML Form Element/Object Samples</h2>
+        <form method="get" action="thanks.html" target="_blank">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" name="username" minlength="5" required><br>
+
+                <label for="email">eMail:</label>
+                <input type="email" name="email" required placeholder="useremail@user.es"><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" name="p" required placeholder="###-###-####"><br>
+
+                <label for="zipcode">Zip Code:</label>
+                <input type="number" name="num" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+
+                <label for="date">Storm Date:</label>
+                <input type="date" for="datestorm"><br>
+
+                <label for="type">Storm type:</label>
+                <select for="stormtype">
+                    <option value="FlashFood">Flash Food</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Tornado">Tornado</option>
+                </select><br>
+
+                <label for="rating">Storm Severity:</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span><br>
+
+                <label for="region">Storm Region:</label>
+                <select for="stormregion">
+                 <option selected disabled>Select Region</option>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Greenville">Greenville</option>
+                    <option value="Springfield">Springfield</option>
+                </select><br>
+
+                <label for="danger">User in-danger level:</label><br>
+                <input type="radio" name="danger" value="Yes"> Yes<br>
+                <input type="radio" name="danger" value="Maybe" checked> Maybe <br>
+                <input type="radio" name="danger" value="No"> No <br>
+
+                <label for="information">Additional information or comments:</label><br>
+                <textarea row="5" cols="30"></textarea><br>
+            </fieldset>
+
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+      <script src="scripts/rangeNumber.js"></script>
+</body>
+
+</html>

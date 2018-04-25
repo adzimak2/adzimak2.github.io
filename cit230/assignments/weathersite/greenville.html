@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin - Week 6</title>
+    <meta name="author" content="Kelly Adzima">
+    <meta name="description" content="Assignment 5 Franklin site">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logoweather.png" alt="The site logo" width="" height="">
+        <h1>Breazy weather</h1>
+        <div class="subheading">Site Motto</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Grenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>The City of Franklin</h2>
+        <figure>
+            <img src="images/pexels-photo-853411.jpeg#" alt="figure">
+        </figure>
+        <section>
+            <h3>Weather Summary</h3>
+            <div class="highlow">
+                <p>High:</p>
+                <p>Low:</p>
+            </div>
+            <div class="current">
+                Sunny
+                <picture>
+                    <img src="images/pexels-photo-858599.jpeg#" alt="" width="20px" height="25px">
+                </picture>
+            </div>
+            <div class="conditions">
+                Precipitation:
+                <p id="precipitation"></p>
+                Wind Speed:
+                <p id="speed"></p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article class="googlefonts">
+            <h3>Franklin Breaks Record</h3>
+            <p class="town-article">
+                <img src="images/pexels-photo-588561.jpeg#" alt="town-article" width="120" height="135"> short article content placeholder
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            Contact information placeholder
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Site Title | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>
+S
